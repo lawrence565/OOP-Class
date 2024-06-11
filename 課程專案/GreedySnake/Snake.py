@@ -2,9 +2,9 @@ import pygame.draw
 
 yellow = (255, 215, 0)
 orange = (255, 69, 0)
-height = 720
-width = 1280
-cellSize = 20
+height = 750
+width = 750
+cellSize = 15
 row = int(height / cellSize)
 column = int(width / cellSize)
 
@@ -24,10 +24,10 @@ class Snake:
 
     def __init__(self):
         self.snake_body = []
-        self.snake_body.append(Node(80, 0))
-        self.snake_body.append(Node(60, 0))
-        self.snake_body.append(Node(40, 0))
-        self.snake_body.append(Node(20, 0))
+        self.snake_body.append(Node(60, 30))
+        self.snake_body.append(Node(45, 30))
+        self.snake_body.append(Node(30, 30))
+        self.snake_body.append(Node(15, 30))
 
     def getSnakebody(self):
         return self.snake_body
